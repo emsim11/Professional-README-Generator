@@ -139,7 +139,7 @@ inquirer.prompt ([
 ]).then((answers) => {
     const readmeContent = generateMarkdown(answers);
 
-    fs.writeFile('./Develop/Samples/README.md', readmeContent, (err) => {
+    fs.writeFile('./README.md', readmeContent, (err) => {
         if(err) {
             console.err(err);
         } else {

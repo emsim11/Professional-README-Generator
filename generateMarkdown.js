@@ -1,14 +1,14 @@
 // Generate License Badge Function
 function generateLicenseBadge(license) {
     const badgeUrls = {
-        'Apache License 2.0': '![License](https://img.shields.io/badge/License-Apache_2.0-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fapache-2.0%2F)',
-        'Boost Software License 1.0': '![License](https://img.shields.io/badge/License-BSL_1.0-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fbsl-1.0%2F)',
-        'GNU Affero General Public License v3.0': '![License](https://img.shields.io/badge/License-GNU_AGPLv3-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fagpl-3.0%2F)',
-        'GNU General Public License v3.0': '![License](https://img.shields.io/badge/License-GNU_GPLv3-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fgpl-3.0%2F)',
-        'GNU Lesser General Public License v2.1': '![License](https://img.shields.io/badge/License-GNU_LGPLv3-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Flgpl-3.0%2F)',
-        'MIT License': '![License](https://img.shields.io/badge/License-MIT-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fmit%2F)',
-        'Mozilla Public License 2.0': '![License](https://img.shields.io/badge/License-MPL_2.0-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fmpl-2.0%2F)',
-        'The Unlicense': '![License](https://img.shields.io/badge/License-Unlicense-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Funlicense%2F)',
+        'Apache License 2.0': '[![License](https://img.shields.io/badge/License-Apache_2.0-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fapache-2.0%2F)](https://choosealicense.com/licenses/apache-2.0/)',
+        'Boost Software License 1.0': '[![License](https://img.shields.io/badge/License-BSL_1.0-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fbsl-1.0%2F)](https://choosealicense.com/licenses/bsl-1.0/)',
+        'GNU Affero General Public License v3.0': '[![License](https://img.shields.io/badge/License-GNU_AGPLv3-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fagpl-3.0%2F)](https://choosealicense.com/licenses/agpl-3.0/)',
+        'GNU General Public License v3.0': '[![License](https://img.shields.io/badge/License-GNU_GPLv3-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fgpl-3.0%2F)](https://choosealicense.com/licenses/gpl-3.0/)',
+        'GNU Lesser General Public License v2.1': '![License](https://img.shields.io/badge/License-GNU_LGPLv3-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Flgpl-3.0%2F)](https://choosealicense.com/licenses/lgpl-3.0/)',
+        'MIT License': '[![License](https://img.shields.io/badge/License-MIT-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fmit%2F)](https://choosealicense.com/licenses/mit/)',
+        'Mozilla Public License 2.0': '[![License](https://img.shields.io/badge/License-MPL_2.0-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fmpl-2.0%2F)](https://choosealicense.com/licenses/mpl-2.0/)',
+        'The Unlicense': '[![License](https://img.shields.io/badge/License-Unlicense-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Funlicense%2F)](https://choosealicense.com/licenses/unlicense/)',
         'No License': '![License](https://img.shields.io/badge/License-None-pink?style=flat-square&labelColor=3A3B3C&color=F778A1)'
     };
 
@@ -17,7 +17,7 @@ function generateLicenseBadge(license) {
 
 // Generate GitHub Badge Function
 function generateGitHubBadge(username, GitHub) {
-    return `![GitHub Badge](https://img.shields.io/badge/GitHub-${username}-blue?style=flat-square&logo=GitHub&labelColor=3A3B3C&color=78E1F7&link=${GitHub})`;
+    return `[![GitHub Badge](https://img.shields.io/badge/GitHub-${username}-blue?style=flat-square&logo=GitHub&labelColor=3A3B3C&color=78E1F7&link=${GitHub})](${GitHub})`;
 }
 
 // Generate Email Badge Function
@@ -27,7 +27,7 @@ function generateEmailBadge(email) {
 
 // Generate Deployed URL Badge Function
 function generateLinkBadge(titleAlt1, deployedURL) {
-    return `![Deployed URL Badge](https://img.shields.io/badge/URL-${titleAlt1}-purple?style=flat-square&labelColor=3A3B3C&color=E0ADF7&link=${deployedURL})`;
+    return `[![Deployed URL Badge](https://img.shields.io/badge/Deployed_URL-${titleAlt1}-purple?style=flat-square&labelColor=3A3B3C&color=E0ADF7&link=${deployedURL})](${deployedURL})`;
 }
 
 // Generate Markdown File Function
@@ -105,7 +105,7 @@ function generateMarkdown(answers) {
     // Support Section
     let supportSection = '';
     if(answers.username && answers.GitHub && answers.GitHubIssue && answers.email) {
-        supportSection = `## Support\n\n[Back to Top](#${answers.titleAlt2})\n\nIf you have any questions, or additional feedback, please feel free to contact me. I will get back to you as soon as possible.\n\n*Contact Information:*\n\nGitHub: [${answers.username}](${answers.GitHub})\n\nEmail: ${answers.email}\n\n*Submit an Issue:*\n\nIf you are experiencing an issue with this applcation, please submit an [issue ticket](${answers.GitHubIssue}).\n\n`;
+        supportSection = `## Support\n\n[Back to Top](#${answers.titleAlt2})\n\nIf you have any questions, or additional feedback, please feel free to contact me. I will get back to you as soon as possible.\n\n*Contact Information:*\n\nGitHub: [${answers.username}](${answers.GitHub})\n\nEmail: ${answers.email}\n\n*Submit an Issue:*\n\nIf you are experiencing an issue with this application, please submit an [issue ticket](${answers.GitHubIssue}).\n\n`;
     }
 
     // Contributing Section
