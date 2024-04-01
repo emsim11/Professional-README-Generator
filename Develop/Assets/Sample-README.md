@@ -1,4 +1,4 @@
-![README Logo](./Assets/README-Logo.svg)
+![README Logo](./README-Logo.svg)
 
 # Professional README Generator
 
@@ -126,4 +126,4 @@ Here are listed the sources that helped make this project possible.
 
 &copy; 2024 First and Last Name
 
-This application is licensed under the [MIT License](./Assets/Samples/LICENSE).
+This application is licensed under the [MIT License](./Samples/LICENSE).

@@ -1,4 +1,4 @@
-![README Logo](./Assets/README-Logo.svg)
+![README Logo](./Develop/Assets/README-Logo.svg)
 
 # Professional README Generator
 
@@ -58,7 +58,7 @@ Instructions and examples for users
 
 ### Visuals
 
-[The Professional README Generator At Work! (Walkthrough Video)](./Assets/Walkthrough-Video.mp4)
+[The Professional README Generator At Work! (Walkthrough Video)](./Develop/Assets/Walkthrough-Video.mp4)
 
 ## Support
 
