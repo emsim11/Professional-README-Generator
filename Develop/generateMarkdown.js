@@ -1,15 +1,15 @@
 // Generate License Badge Function
 function generateLicenseBadge(license) {
     const badgeUrls = {
-        'Apache License 2.0': '[![License](https://img.shields.io/badge/License-Apache_2.0-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fapache-2.0%2F)](https://choosealicense.com/licenses/apache-2.0/)',
-        'Boost Software License 1.0': '[![License](https://img.shields.io/badge/License-BSL_1.0-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fbsl-1.0%2F)](https://choosealicense.com/licenses/bsl-1.0/)',
-        'GNU Affero General Public License v3.0': '[![License](https://img.shields.io/badge/License-GNU_AGPLv3-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fagpl-3.0%2F)](https://choosealicense.com/licenses/agpl-3.0/)',
-        'GNU General Public License v3.0': '[![License](https://img.shields.io/badge/License-GNU_GPLv3-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fgpl-3.0%2F)](https://choosealicense.com/licenses/gpl-3.0/)',
-        'GNU Lesser General Public License v2.1': '![License](https://img.shields.io/badge/License-GNU_LGPLv3-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Flgpl-3.0%2F)](https://choosealicense.com/licenses/lgpl-3.0/)',
-        'MIT License': '[![License](https://img.shields.io/badge/License-MIT-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fmit%2F)](https://choosealicense.com/licenses/mit/)',
-        'Mozilla Public License 2.0': '[![License](https://img.shields.io/badge/License-MPL_2.0-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fmpl-2.0%2F)](https://choosealicense.com/licenses/mpl-2.0/)',
-        'The Unlicense': '[![License](https://img.shields.io/badge/License-Unlicense-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Funlicense%2F)](https://choosealicense.com/licenses/unlicense/)',
-        'No License': '![License](https://img.shields.io/badge/License-None-pink?style=flat-square&labelColor=3A3B3C&color=F778A1)'
+        'Apache License 2.0': '[![License Badge](https://img.shields.io/badge/License-Apache_2.0-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fapache-2.0%2F)](https://choosealicense.com/licenses/apache-2.0/)',
+        'Boost Software License 1.0': '[![License Badge](https://img.shields.io/badge/License-BSL_1.0-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fbsl-1.0%2F)](https://choosealicense.com/licenses/bsl-1.0/)',
+        'GNU Affero General Public License v3.0': '[![License Badge](https://img.shields.io/badge/License-GNU_AGPLv3-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fagpl-3.0%2F)](https://choosealicense.com/licenses/agpl-3.0/)',
+        'GNU General Public License v3.0': '[![License Badge](https://img.shields.io/badge/License-GNU_GPLv3-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fgpl-3.0%2F)](https://choosealicense.com/licenses/gpl-3.0/)',
+        'GNU Lesser General Public License v2.1': '![License Badge](https://img.shields.io/badge/License-GNU_LGPLv3-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Flgpl-3.0%2F)](https://choosealicense.com/licenses/lgpl-3.0/)',
+        'MIT License': '[![License Badge](https://img.shields.io/badge/License-MIT-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fmit%2F)](https://choosealicense.com/licenses/mit/)',
+        'Mozilla Public License 2.0': '[![License Badge](https://img.shields.io/badge/License-MPL_2.0-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Fmpl-2.0%2F)](https://choosealicense.com/licenses/mpl-2.0/)',
+        'The Unlicense': '[![License Badge](https://img.shields.io/badge/License-Unlicense-pink?style=flat-square&labelColor=3A3B3C&color=F778A1&link=https%3A%2F%2Fchoosealicense.com%2Flicenses%2Funlicense%2F)](https://choosealicense.com/licenses/unlicense/)',
+        'No License': '![License Badge](https://img.shields.io/badge/License-None-pink?style=flat-square&labelColor=3A3B3C&color=F778A1)'
     };
 
     return `${badgeUrls[license]}`;
@@ -147,37 +147,37 @@ function generateMarkdown(answers) {
     // Generated Table of Contents
     let tableOfContents = '';
     if(descriptionSection !== '') {
-        tableOfContents += '[Description](#description) • ';
+        tableOfContents += '<a href="#description">Description</a> • \n';
     }
     if(featuresSection !== '') {
-        tableOfContents += '[Features](#features) • ';
+        tableOfContents += '<a href="#features">Features</a> • \n';
     }
     if(installationSection !== '') {
-        tableOfContents += '[Installation](#installation) • ';
+        tableOfContents += '<a href="#installation">Installation</a> • \n';
     }
     if(usageSection !== '') {
-        tableOfContents += '[Usage](#usage) • ';
+        tableOfContents += '<a href="#usage">Usage</a> • \n';
     }
     if(testingSection !== '') {
-        tableOfContents += '[Testing](#testing) • ';
+        tableOfContents += '<a href="#testing">Testing</a> • \n';
     }
     if(supportSection !== '') {
-        tableOfContents += '[Support](#support) • ';
+        tableOfContents += '<a href="#support">Support</a> • \n';
     }
     if(contributingSection) {
-        tableOfContents += '[Contributing](#contributing) • ';
+        tableOfContents += '<a href="#contributing">Contributing</a> • \n';
     }
     if(creditsSection) {
-        tableOfContents += '[Credits](#credits) • ';
+        tableOfContents += '<a href="#credits">Credits</a> • \n';
     }
     if(licenseSection) {
-        tableOfContents += '[License](#license) • ';
+        tableOfContents += '<a href="#license">License</a> • \n';
     }
     
     tableOfContents = tableOfContents.slice(0, -3);
 
     // README Content
-    const readmeContent = `${answers.logo}\n\n# ${answers.title}\n\n***${answers.briefDescription}***\n\n${licenseBadge} ${githubBadge} ${emailBadge} ${linkBadge}\n\n${tableOfContents}${answers.projectGIF}\n\n${descriptionSection}${featuresSection}${installationSection}${usageSection}${testingSection}${supportSection}${contributingSection}${creditsSection}${licenseSection}`
+    const readmeContent = `<div align="center">\n\n<a href="${answers.logo}"><img src="${answers.logo}" alt="Application Logo" width="250"></a>\n\n# ${answers.title}\n\n<h3>${answers.briefDescription}</h3>\n\n${licenseBadge} ${githubBadge} ${emailBadge} ${linkBadge}\n\n<p>\n${tableOfContents}</p>\n\n</div>\n\n${answers.projectGIF}\n\n${descriptionSection}${featuresSection}${installationSection}${usageSection}${testingSection}${supportSection}${contributingSection}${creditsSection}${licenseSection}`
 
     return readmeContent;
 
