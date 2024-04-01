@@ -6,7 +6,7 @@ inquirer.prompt ([
 {
         name: 'logo',
         type: 'input',
-        message: 'Please provide your logo image information. ![Logo Name](Logo/File/Path.svg)'
+        message: 'Please provide your logo image information. (./Logo/File/Path.svg)'
     }, {
         name: 'title',
         type: 'input',
