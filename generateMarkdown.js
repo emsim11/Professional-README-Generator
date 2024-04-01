@@ -177,7 +177,7 @@ function generateMarkdown(answers) {
     tableOfContents = tableOfContents.slice(0, -3);
 
     // README Content
-    const readmeContent = `${answers.logo}\n\n# ${answers.title}\n\n***${answers.briefDescription}***\n\n${licenseBadge} ${githubBadge} ${emailBadge} ${linkBadge}\n\n${tableOfContents}\n\n${answers.projectGIF}\n\n${descriptionSection}\n\n${featuresSection}\n\n${installationSection}\n\n${usageSection}\n\n${testingSection}\n\n${supportSection}\n\n${contributingSection}\n\n${creditsSection}\n\n${licenseSection}`
+    const readmeContent = `${answers.logo}\n\n# ${answers.title}\n\n***${answers.briefDescription}***\n\n${licenseBadge} ${githubBadge} ${emailBadge} ${linkBadge}\n\n${tableOfContents}${answers.projectGIF}\n\n${descriptionSection}${featuresSection}${installationSection}${usageSection}${testingSection}${supportSection}${contributingSection}${creditsSection}${licenseSection}`
 
     return readmeContent;
 
