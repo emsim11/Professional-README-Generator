@@ -54,7 +54,7 @@ function generateMarkdown(answers) {
     // Generated Description Section
     let descriptionSection = '';
     if(answers.descriptionWhat || answers.descriptionWhy || answers.descriptionHow || answers.userStory || answers.acceptanceCriteria) {
-        descriptionSection = `## Description\n\n[Back to Top](#${answers.titleAlt2})\n\n`;
+        descriptionSection = `## Description\n\n`;
         if(answers.descriptionWhat) {
             descriptionSection += `${answers.descriptionWhat}\n\n`;
         }
@@ -64,32 +64,39 @@ function generateMarkdown(answers) {
         if(answers.descriptionHow) {
             descriptionSection += `${answers.descriptionHow}\n\n`;
         }
+        if(answers.descriptionWhat || answers.descriptionWhy || answers.descriptionHow) {
+            descriptionSection += `[Back to Top](#${answers.titleAlt2})\n\n`;
+        }
         if(answers.userStory) {
             descriptionSection += `### User Story\n\n${answers.userStory}\n\n`;
         }
         if(answers.acceptanceCriteria) {
             descriptionSection += `### Acceptance Criteria\n\n${answers.acceptanceCriteria}\n\n`;
         }
+        if(!answers.descriptionWhat || !answers.descriptionWhy || !answers.descriptionHow && answers.userStory || answers.acceptanceCriteria) {
+            descriptionSection += `[Back to Top](#${answers.titleAlt2})\n\n`;
+        }
+        
     }
 
     // Features Section
     let featuresSection = '';
     if(answers.keyFeatures) {
-        featuresSection = `## Features\n\n[Back to Top](#${answers.titleAlt2})\n\n${answers.keyFeatures}\n\n`;
+        featuresSection = `## Features\n\n${answers.keyFeatures}\n\n[Back to Top](#${answers.titleAlt2})\n\n`;
     }
 
     // Installation Section
     let installationSection = '';
     if(answers.installation) {
-        installationSection = `## Installation\n\n[Back to Top](#${answers.titleAlt2})\n\n${answers.installation}\n\n`;
+        installationSection = `## Installation\n\n${answers.installation}\n\n[Back to Top](#${answers.titleAlt2})\n\n`;
     }
 
     // Usage Section
     let usageSection = '';
     if(answers.usage || answers.visuals) {
-        usageSection = `## Usage\n\n[Back to Top](#${answers.titleAlt2})\n\n`;
+        usageSection = `## Usage\n\n`;
         if(answers.usage) {
-            usageSection += `${answers.usage}\n\n`;
+            usageSection += `${answers.usage}\n\n[Back to Top](#${answers.titleAlt2})\n\n`;
         }
         if(answers.visuals) {
             usageSection += `### Visuals\n\n${answers.visuals}\n\n`;
@@ -99,19 +106,19 @@ function generateMarkdown(answers) {
     // Testing Section
     let testingSection = '';
     if(answers.testing) {
-        testingSection = `## Testing\n\n[Back to Top](#${answers.titleAlt2})\n\n${answers.testing}\n\n`;
+        testingSection = `## Testing\n\n${answers.testing}\n\n[Back to Top](#${answers.titleAlt2})\n\n`;
     }
 
     // Support Section
     let supportSection = '';
     if(answers.username && answers.GitHub && answers.GitHubIssue && answers.email) {
-        supportSection = `## Support\n\n[Back to Top](#${answers.titleAlt2})\n\nIf you have any questions, or additional feedback, please feel free to contact me. I will get back to you as soon as possible.\n\n*Contact Information:*\n\nGitHub: [${answers.username}](${answers.GitHub})\n\nEmail: ${answers.email}\n\n*Submit an Issue:*\n\nIf you are experiencing an issue with this application, please submit an [issue ticket](${answers.GitHubIssue}).\n\n`;
+        supportSection = `## Support\n\nIf you have any questions, or additional feedback, please feel free to contact me. I will get back to you as soon as possible.\n\n*Contact Information:*\n\nGitHub: [${answers.username}](${answers.GitHub})\n\nEmail: ${answers.email}\n\n*Submit an Issue:*\n\nIf you are experiencing an issue with this application, please submit an [issue ticket](${answers.GitHubIssue}).\n\n[Back to Top](#${answers.titleAlt2})\n\n`;
     }
 
     // Contributing Section
     let contributingSection = '';
     if(answers.contributing || answers.contributingRoadmap || answers.contributingProjectStatus || answers.contributingGuidelines) {
-        contributingSection = `## Contributing\n\n[Back to Top](#${answers.titleAlt2})\n\n`;
+        contributingSection = `## Contributing\n\n`;
         if(answers.contributing) {
             contributingSection += `${answers.contributing}\n\n`;
         }
@@ -123,6 +130,9 @@ function generateMarkdown(answers) {
         }
         if(answers.contributingGuidelines) {
             contributingSection += `### Contribution Guidelines\n\n${answers.contributingGuidelines}\n\n`;
+        }
+        if(answers.contributing || answers.contributingRoadmap || answers.contributingProjectStatus || answers.contributingGuidelines) {
+            contributingSection += `[Back to Top](#${answers.titleAlt2})\n\n`;
         }
     }
 
@@ -141,7 +151,7 @@ function generateMarkdown(answers) {
     // License Section
     let licenseSection = '';
     if(answers.licenseYear && answers.licenseName && answers.license) {
-        licenseSection = `## License\n\n&copy; ${answers.licenseYear} ${answers.licenseName}\n\nThis application is licensed under the [${answers.license}](./LICENSE).`
+        licenseSection = `## License\n\n&copy; ${answers.licenseYear} ${answers.licenseName}\n\nThis application is licensed under the [${answers.license}](./LICENSE).`;
     }
 
     // Generated Table of Contents
