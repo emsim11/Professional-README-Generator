@@ -35,6 +35,10 @@ inquirer.prompt ([
         name: 'GitHubIssue',
         type: 'input',
         message: "Please provide a link to this repository's issues page. (Required)"
+    },{
+        name: 'GitHubRepo',
+        type: 'input',
+        message: 'Please provide the name of this repository using dashes instead of spaces. (Required)'
     }, {
         name: 'email',
         type: 'input',
@@ -66,7 +70,7 @@ inquirer.prompt ([
     }, {
         name: 'acceptanceCriteria',
         type: 'input',
-        message: 'What are your acceptance criteria? (Include backticksfor fenced code blocks)'
+        message: 'What are your acceptance criteria? (Include backticks for fenced code blocks)'
     }, {
         name: 'keyFeatures',
         type: 'input',
@@ -76,6 +80,10 @@ inquirer.prompt ([
         type: 'input',
         message: 'What are the steps required to install your project? Please provide a step-by-step description of how to get the development environment running and any dependencies that are required to be installed.'
     }, {
+        name: 'technologies',
+        type: 'input',
+        message: 'What technologies did you use to build this project?'
+    } , {
         name: 'usage',
         type: 'input',
         message: 'What instructions and examples would be helpful to include for someone trying to use your project?'
@@ -139,7 +147,7 @@ inquirer.prompt ([
 ]).then((answers) => {
     const readmeContent = generateMarkdown(answers);
 
-    fs.writeFile('./README1.md', readmeContent, (err) => {
+    fs.writeFile('./README.md', readmeContent, (err) => {
         if(err) {
             console.err(err);
         } else {
