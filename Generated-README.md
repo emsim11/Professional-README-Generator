@@ -6,7 +6,7 @@
 
 <h3>Description</h3>
 
-[![GitHub Follow Badge](https://img.shields.io/github/followers/emsim11?label=Follow)](https://github.com/emsim11) [![GitHub Repository Forks Badge](https://img.shields.io/github/forks/emsim11/Professional-README-Generator?label=Forks&labelColor=3A3B3C&logo=GitHub) ![GitHub Repository Stars Badge](https://img.shields.io/github/stars/emsim11/Professional-README-Generator?label=Stars&labelColor=3A3B3C&logo=GitHub) ![GitHub Repository Watchers Badge](https://img.shields.io/github/watchers/emsim11/Professional-README-Generator?label=Watchers&labelColor=3A3B3C&logo=GitHub)
+[![GitHub Follow Badge](https://img.shields.io/github/followers/emsim11?label=Follow)](https://github.com/emsim11) ![GitHub Repository Forks Badge](https://img.shields.io/github/forks/emsim11/Professional-README-Generator?label=Forks&labelColor=3A3B3C&logo=GitHub) ![GitHub Repository Stars Badge](https://img.shields.io/github/stars/emsim11/Professional-README-Generator?label=Stars&labelColor=3A3B3C&logo=GitHub) ![GitHub Repository Watchers Badge](https://img.shields.io/github/watchers/emsim11/Professional-README-Generator?label=Watchers&labelColor=3A3B3C&logo=GitHub)
 
 [![Deployed URL Badge](https://img.shields.io/badge/Deployed_URL-Title-purple?logo=GoogleChrome&logoColor=ffffff&labelColor=3A3B3C&color=E0ADF7&link=Deployed-Url.com)](Deployed-Url.com)
 
