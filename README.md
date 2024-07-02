@@ -128,7 +128,7 @@ If you are experiencing an issue with this application, please submit an [issue 
 
 ## Contributing
 
-![GitHub Repository Contributors Badge](https://img.shields.io/github/contributors/Emsim11/Professional-README-Generator?label=Contributors&labelColor=3A3B3C&logo=GitHub&color=78E1F7)
+![GitHub Repository Contributors Badge](https://img.shields.io/github/contributors/Emsim11/Professional-README-Generator?label=Contributors&labelColor=3A3B3C&logo=GitHub&color=F89880)
 
 This project is not allowing other contributors at this moment.
 

@@ -47,7 +47,7 @@ function generateEmailBadge(email) {
 
 // Generate GitHub Repository Contributors Badge Function
 function generateGitHubRepoContributorsBadge(username, GitHubRepo) {
-    return `![GitHub Repository Contributors Badge](https://img.shields.io/github/contributors/${username}/${GitHubRepo}?label=Contributors&labelColor=3A3B3C&logo=GitHub&color=78E1F7)`;
+    return `![GitHub Repository Contributors Badge](https://img.shields.io/github/contributors/${username}/${GitHubRepo}?label=Contributors&labelColor=3A3B3C&logo=GitHub&color=F89880)`;
 };
 
 // Generate GitHub Profile Badge Function

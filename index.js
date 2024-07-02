@@ -147,7 +147,7 @@ inquirer.prompt ([
 ]).then((answers) => {
     const readmeContent = generateMarkdown(answers);
 
-    fs.writeFile('./README.md', readmeContent, (err) => {
+    fs.writeFile('./Generated-README.md', readmeContent, (err) => {
         if(err) {
             console.err(err);
         } else {
