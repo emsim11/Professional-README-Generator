@@ -90,7 +90,7 @@ Then I am taken to the corresponding section of the README
 
 ## Installation
 
-To use this application, please fork the repository and clone the new repository in your code editor. This application requires [Node.js](https://nodejs.org/en), so please make sure to have it installed. Within your new repository folder, open the integrated terminal and type in the command `npm install` to install the Inquirer.js Node Package Manager dependency. 
+To use this application, please fork the repository and clone the new repository in your code editor. This application requires [Node.js](https://nodejs.org/en), so please make sure to have it installed. Within your new repository folder, open the integrated terminal and type in the command `npm install` to install the Inquirer.js Node Package Manager dependency.
 
 Now that all of the required tools have been installed, type this command into the integrated terminal to begin the prompts: `node index.js`. Once you have finished answering the questions about the application that a README.md file is being created for, a new file will appear in the directory called `README.md`! Right-click on the file and select `Open Preview` to preview the file's rendering on websites, such as GitHub.
 
@@ -104,7 +104,7 @@ This application requires that Node.js is installed on your computer. It also us
 
 ## Usage
 
-Use the Professional README Generator to quickly create high-quality README.md files for your applications and projects! Simply answers the questions in the command-line interface, and the application will do the rest! View your new README.md file in your directory after the prompts have finished! 
+Use the Professional README Generator to quickly create high-quality README.md files for your applications and projects! Simply answers the questions in the command-line interface, and the application will do the rest! View your new README.md file in your directory after the prompts have finished!
 
 ### Visuals
 
